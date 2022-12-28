@@ -1,0 +1,13 @@
+.list-link {
+    color: $dark;
+
+    &.active {
+        color: $primary;
+    }
+
+    &.active::before {
+        content: "- ";
+        color: $primary;
+
+    }
+}

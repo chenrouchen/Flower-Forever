@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower & Forever</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container">
+            <a class="navbar-brand font-Kalam" href="index.html"><i class="bi bi-flower1"></i> Flower&Forever</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " href="service.html">服務介紹</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " href="design.html">作品設計</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " href="allClass.html">花藝課程</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary rounded-pill px-5" href="form.html">線上報名</a>
+            </div>
+        </div>
+    </nav>
+    <div class="banner mb-4">
+    </div>
+    <div class="container py-5">
+        <div class="row d-flex  justify-content-center">
+            <div class="col-lg-8">
+                <form action="" class=" rounded border-3 border-top border-secondary shadow p-4 p-lg-5">
+                    <h1 class=" text-center mb-5 fs-3">填寫訂購資訊</h1>
+                    <div class="row row-cols-1 g-3 g-lg-4">
+                        <div class="col-lg-6">
+                            <label for="name" class="form-label">名字</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-lg-6"> <label for="lastName" class="form-label">姓氏</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                        <div class="col">
+                            <label for="phone" class="form-label">手機號碼</label>
+                            <input type="number" class="form-control" id="phone">
+                        </div>
+                        <div class="col">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col">
+                            <label for="class" class="form-label">請選擇要上的課程</label>
+                            <select class="form-select" aria-label="Default select example" id="class">
+                                <option selected>野餐花籃課程 NT$1300/堂</option>
+                                <option>美好生活花藝課程 NT$1100/堂</option>
+                                <option>幸福花束課程 NT$1000/堂</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="class" class="form-label">請選擇上課的日期</label>
+                            <select class="form-select" aria-label="Default select example" id="class">
+                                <option selected>1/5</option>
+                                <option>1/6</option>
+                                <option>1/7</option>
+                                <option>1/8</option>
+                                <option>1/9</option>
+                                <option>1/10</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <h3 class="fs-6">加購區</h3>
+                            <input class="form-check-input" type="checkbox" value="" id="beef">
+                            <label for="beef" class="form-label">精緻小卡 NT$30/張</label>
+                            <input class="form-check-input ms-3" type="checkbox" value="" id="pork">
+                            <label for="pork" class="form-label">陶瓷花器 NT$800/個</label>
+                            <input class="form-check-input ms-3" type="checkbox" value="" id="vegetable">
+                            <label for="vegetable" class="form-label">包裝紙 NT$20/張</label>
+                        </div>
+                        <div class="col">
+                            <label for="pay" class="form-label">訂金付款方式</label>
+                            <select class="form-select" aria-label="Default select example" id="pay">
+                                <option>信用卡</option>
+                                <option selected>銀行轉帳</option>
+                            </select>
+                        </div>
+                        <div class="col mb-5">
+                            <label for="text" class="form-label">備註說明</label>
+                            <textarea id="text" class="form-control w-100 h-100"></textarea>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="fs-4 mb-4 fw-bold">總金額 NT$1300</h2>
+                            <button class="btn btn-secondary text-dark rounded-pill px-5" type="button">送出表單</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="border-3 border-top border-primary p-5 d-lg-flex justify-content-center">
+        <div class="mx-3 d-flex flex-column flex-lg-row align-items-center">
+            <img src="https://images.unsplash.com/photo-1592840499794-22e2fe8d6307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                alt="flower" class="object-fit-cover" style="height: 200px; width: 200px;">
+            <div class="text-center text-lg-start">
+                <h3 class="h4">想知道更多課程資訊?</h3>
+                <p><i class="bi bi-telephone-fill"></i> 請洽詢客服人員</p>
+                <button type="button" class="btn btn-outline-primary rounded-pill px-5 text-dark">聯絡我們</button>
+            </div>
+
+        </div>
+
+
+        <div class="mx-3 d-flex flex-column flex-lg-row  align-items-center">
+            <img src="https://images.unsplash.com/photo-1540845692348-b9d2bc813a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=470&q=80"
+                alt="flower" class="object-fit-cover" style="height: 200px; width: 200px;">
+            <div class="text-center text-lg-start">
+                <h3 class="h4">你也想當花藝師?</h3>
+                <p><i class="bi bi-flower1"></i> 歡迎加入我們</p>
+                <button type="button" class="btn btn-outline-primary rounded-pill px-5 text-dark">加入我們</button>
+            </div>
+        </div>
+    </div>
+
+    <div class=" position-fixed bottom-0 end-0 m-3">
+        <a href="#" class="icon fs-1 p-4 position-relative"><i
+                class="top-icon bi bi-chevron-up position-absolute top-0 start-0"></i><i
+                class="double-icon bi bi-chevron-double-up position-absolute top-0 start-0"></i></a>
+    </div>
+    <footer class="p-3 bg-dark">
+        <p class="text-white text-center m-0">Copyright © 2021 Flower & Forever.All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

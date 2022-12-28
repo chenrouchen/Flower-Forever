@@ -1,0 +1,14 @@
+.double-icon {
+    display: none;
+}
+
+.icon:hover {
+    .top-icon {
+        display: none;
+
+    }
+
+    .double-icon {
+        display: block;
+    }
+}

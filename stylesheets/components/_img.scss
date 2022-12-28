@@ -1,0 +1,42 @@
+.top-img {
+    z-index: 2;
+    transition: all .5s;
+}
+
+.bottom-img {
+
+    opacity: 0;
+    transition: all .5s;
+}
+
+.class-card {
+    box-shadow: $box-shadow;
+}
+
+.card-link {
+    color: $dark;
+}
+
+.class-card:hover {
+    .bottom-img {
+        opacity: 1;
+
+    }
+
+    .top-img {
+        opacity: 0;
+
+    }
+
+    .card-link {
+        color: $primary;
+    }
+
+    box-shadow: $box-shadow-lg;
+}
+
+
+
+.navbar {
+    z-index: 100;
+}
