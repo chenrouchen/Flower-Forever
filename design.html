@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/animate.css/3.1.0/animate.css">
     <link rel="stylesheet" href="./stylesheets/all.css">
 </head>
 
@@ -42,14 +43,14 @@
             </div>
         </div>
     </nav>
-    <div class="banner mb-4">
+    <div class="banner mb-4 d-flex flex-column justify-content-center align-items-start align-items-lg-center px-5">
+        <h1 class="text-primary">作品設計</h1>
     </div>
-    <div class="container py-3 mb-4  d-flex flex-column ">
-        <h1 class="text-primary text-center mb-5 border-2 border-light border-bottom w-50 align-self-center">近期作品</h1>
+    <div class="container py-3 my-4  d-flex flex-column animation" data-animation="fadeInUp" data-animation-delay="0s">
         <div class="row flex-column flex-lg-row align-items-center align-items-lg-start g-0">
-            <div class="col-lg-4 text-center text-lg-start">
-                <h2 class="fw-bold fs-4 mb-4  "> 花藝課程</h2>
-                <ul class="list-style-none p-0 ">
+            <div class="col-lg-4 text-center text-lg-start p-4">
+                <h2 class="fw-bold fs-4 mb-4"> 花藝課程</h2>
+                <ul class="list-style-none p-0 " id="classList">
                     <li class="m-3 "><a href="#" class="list-link text-decoration-none  active">全部</a> </li>
                     <li class="m-3 "><a href="#" class="list-link text-decoration-none  ">野餐花籃課程</a> </li>
                     <li class="m-3 "><a href="#" class="list-link text-decoration-none  ">美好生活花藝課程</a> </li>
@@ -57,8 +58,8 @@
                 </ul>
             </div>
             <div class="col-lg-8">
-                <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3 ">
-                    <div class="col ">
+                <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3 " id="renderData">
+                    <!-- <div class="col ">
                         <div class="portfolio position-relative h-100 ">
                             <img src="https://images.unsplash.com/photo-1523693916903-027d144a2b7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
                                 alt="flower" class="w-100 h-100 object-fit-cover img-fluid rounded ">
@@ -137,7 +138,7 @@
                                 <p class="text-white  ps-4 fs-5 ">給親愛的你</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>
@@ -180,6 +181,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+
+    <script src="./js/animation.js"></script>
+    <script src="./js/design.js"></script>
 </body>
 
 </html>

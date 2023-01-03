@@ -5,7 +5,8 @@
         color: $primary;
     }
 
-    &.active::before {
+    &.active::before,
+    &:hover::before {
         content: "- ";
         color: $primary;
 

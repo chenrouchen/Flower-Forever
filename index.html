@@ -11,11 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/animate.css/3.1.0/animate.css">
     <link rel="stylesheet" href="./stylesheets/all.css">
+    <style>
+        .animation {
+            opacity: 0;
+        }
+
+        .animated {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top w-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand font-Kalam" href="#"><i class="bi bi-flower1"></i> Flower&Forever</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -48,8 +58,9 @@
     </header>
 
     <div class="container p-5">
-        <div class="row row-cols-1 row-cols-lg-2 flex-row-reverse  mb-5">
-            <div class="col align-self-center text-center text-lg-start">
+        <div class="row row-cols-1 row-cols-lg-2 flex-row-reverse  mb-5 animation" data-animation="fadeInUp"
+            data-animation-delay="0s">
+            <div class="col align-self-center text-center text-lg-start ">
                 <h2 class="font-Kalam text-secondary  mb-3">Service</h2>
                 <p class="lh-lg"><strong class="fs-3 font-Kalam text-primary"> Flower&Forever</strong> 是一群<br>
                     擁有熱忱及熱愛花藝設計的團隊<br>
@@ -63,7 +74,7 @@
                     alt="flower" class="img-fluid rounded "></div>
         </div>
 
-        <div class="mb-5">
+        <div class="mb-5 animation" data-animation="fadeInLeft" data-animation-delay="0s">
             <h2 class="text-center text-primary mb-4">近期作品</h2>
             <div class="row row-cols-2 row-cols-lg-4 mb-4 g-4 g-lg-3">
                 <div class="col ">
@@ -72,7 +83,8 @@
                             alt="flower" class="w-100 h-100 object-fit-cover img-fluid rounded ">
                         <div
                             class="position-absolute bottom-0 w-100 h-100 d-flex flex-column justify-content-end  bg-dark-gradient rounded ">
-                            <p class="text-white  ps-4 mb-1">幸福花束課程</p>
+                            <a href="design.html"
+                                class="stretched-link text-decoration-none text-white  ps-4 mb-1">幸福花束課程</a>
                             <p class="text-white  ps-4 fs-5 ">屬於我們的浪漫</p>
                         </div>
 
@@ -84,7 +96,8 @@
                             alt="flower" class="w-100 h-100 object-fit-cover img-fluid rounded ">
                         <div
                             class="position-absolute bottom-0 w-100 h-100 d-flex flex-column justify-content-end bg-dark-gradient rounded ">
-                            <p class="text-white  ps-4 mb-1">幸福花束課程</p>
+                            <a href="design.html"
+                                class="stretched-link text-decoration-none text-white  ps-4 mb-1">幸福花束課程</a>
                             <p class="text-white  ps-4 fs-5 ">平凡中的小幸福</p>
                         </div>
 
@@ -96,7 +109,8 @@
                             alt="flower" class="w-100 h-100 object-fit-cover img-fluid rounded ">
                         <div
                             class="position-absolute bottom-0 w-100 h-100 d-flex flex-column justify-content-end bg-dark-gradient rounded ">
-                            <p class="text-white  ps-4 mb-1">美好生活花藝課程</p>
+                            <a href="design.html"
+                                class="stretched-link text-decoration-none text-white  ps-4 mb-1">美好生活花藝課程</a>
                             <p class="text-white  ps-4 fs-5 ">生活中的儀式感</p>
                         </div>
 
@@ -108,86 +122,79 @@
                             alt="flower" class="w-100 h-100 object-fit-cover img-fluid rounded ">
                         <div
                             class="position-absolute bottom-0 w-100 h-100 d-flex flex-column justify-content-end bg-dark-gradient rounded ">
-                            <p class="text-white  ps-4 mb-1">幸福花束課程</p>
+                            <a href="design.html"
+                                class="stretched-link text-decoration-none text-white  ps-4 mb-1">幸福花束課程</a>
                             <p class="text-white  ps-4 fs-5 ">那些年的我們</p>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-primary rounded-pill px-5 text-dark me-4">查看更多作品</button>
-                <button type="button" class="btn btn-primary rounded-pill px-5">客製化花藝</button>
+            <div class=" d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                <a href="design.html" class="btn btn-outline-primary rounded-pill px-5 m-3">看更多作品</a>
+                <a href="allClass.html" class="btn btn-primary rounded-pill px-5 m-3">客製化花藝</a>
             </div>
         </div>
 
-        <div class="mb-5">
+        <div class="animation" data-animation="fadeInRight" data-animation-delay="0s">
             <h2 class="text-center text-primary mb-4">花藝課程</h2>
             <p class="text-center">不定期開辦課程，記得追蹤我們查看開課消息喔~</p>
-            <div class="row row-cols-1 row-cols-lg-3 mb-4  g-4 g-lg-3">
+            <div class="row row-cols-1 row-cols-lg-3 mb-5  g-4 g-lg-3">
                 <div class="col">
-                    <div class="class-card card border-0 h-100 ">
-                        <div style="width: 100%;height: 424px;" class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1494336877155-7fb9c6984f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                class="top-img card-img-top object-fit-cover w-100 h-100 position-absolute"
-                                alt="flower">
-                            <img src="https://images.unsplash.com/photo-1494336956603-39a3641efa1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                class="bottom-img card-img-top object-fit-cover w-100 h-100  position-absolute"
-                                alt="flower">
-                        </div>
+                    <div class="class-card card border-0 h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1494336877155-7fb9c6984f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class=" card-img-top object-fit-cover w-100 h-424" alt="flower">
+                        <img src="https://images.unsplash.com/photo-1494336956603-39a3641efa1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            class="bottom-img card-img-top object-fit-cover w-100 h-424  position-absolute"
+                            alt="flower">
                         <div class="card-body p-4 ">
                             <h5 class="card-title">野餐花籃課程</h5>
                             <p class="card-text">認識豐富多彩的季節鮮花，學習籐籃插花技巧，提著花籃一起去野餐！</p>
                         </div>
                         <div class="card-footer bg-white ">
-                            <a href="#"
-                                class="card-link text-decoration-none font-Kalam fs-5 d-block text-center w-100">more</a>
+                            <a href="class.html"
+                                class="card-link stretched-link text-decoration-none font-Kalam fs-5 d-block text-center w-100">more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="class-card card border-0 h-100 ">
-                        <div style="width: 100%;height: 424px;" class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                class="top-img card-img-top h-100 w-100 object-fit-cover position-absolute "
-                                alt="flower">
-                            <img src="https://images.unsplash.com/photo-1572454591674-2739f30d8c40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                class="bottom-img card-img-top h-100 w-100 object-fit-cover  position-absolute "
-                                alt="flower">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            class=" card-img-top h-424 w-100 object-fit-cover  " alt="flower">
+                        <img src="https://images.unsplash.com/photo-1572454591674-2739f30d8c40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            class="bottom-img card-img-top h-424 w-100 object-fit-cover  position-absolute "
+                            alt="flower">
                         <div class="card-body p-4">
                             <h5 class="card-title">美好生活花藝課程</h5>
                             <p class="card-text">沒有規定的流程，隨心所欲地設計，一起來創造生活中的小確幸</p>
                         </div>
                         <div class="card-footer bg-white">
-                            <a href="#"
-                                class="card-link text-decoration-none font-Kalam fs-5 d-block text-center w-100">more</a>
+                            <a href="class.html"
+                                class="card-link pe-none text-decoration-none font-Kalam fs-5 d-block text-center w-100">尚未開課</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="class-card card border-0 h-100 ">
-                        <div style="width: 100%;height: 424px;" class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1622658641558-1bf6a846adeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                class="top-img card-img-top h-100 w-100 object-fit-cover position-absolute "
-                                alt="flower">
-                            <img src="https://images.unsplash.com/photo-1622658641558-235f26dd270b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                class="bottom-img card-img-top h-100 w-100 object-fit-cover  position-absolute "
-                                alt="flower">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1622658641558-1bf6a846adeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class=" card-img-top h-424 w-100 object-fit-cover " alt="flower">
+                        <img src="https://images.unsplash.com/photo-1622658641558-235f26dd270b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            class="bottom-img card-img-top h-424 w-100 object-fit-cover  position-absolute "
+                            alt="flower">
                         <div class="card-body p-4">
                             <h5 class="card-title">幸福花束課程</h5>
                             <p class="card-text">帶著滿滿的愛，不論是送給情人、朋友、師長甚至是自己都會感到非常幸福</p>
                         </div>
                         <div class="card-footer bg-white">
-                            <a href="#"
-                                class="card-link text-decoration-none font-Kalam fs-5 d-block text-center w-100">more</a>
+                            <a href="class.html"
+                                class="card-link pe-none text-decoration-none font-Kalam fs-5 d-block text-center w-100">尚未開課</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center"> <button type="button"
-                    class="btn btn-outline-primary rounded-pill px-5 text-dark">看更多課程</button></div>
+            <div class="d-flex justify-content-center">
+                <a href="allClass.html" class="btn btn-outline-primary rounded-pill px-5">看更多課程</a>
+            </div>
 
         </div>
     </div>
@@ -195,11 +202,11 @@
     <div class="border-3 border-top border-primary p-5 d-lg-flex justify-content-center">
         <div class="mx-3 d-flex flex-column flex-lg-row align-items-center">
             <img src="https://images.unsplash.com/photo-1592840499794-22e2fe8d6307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
-                alt="flower" class="object-fit-cover" style="height: 200px; width: 200px;">
+                alt="flower" class="object-fit-cover w-200 h-200">
             <div class="text-center text-lg-start">
                 <h3 class="h4">想知道更多課程資訊?</h3>
                 <p><i class="bi bi-telephone-fill"></i> 請洽詢客服人員</p>
-                <button type="button" class="btn btn-outline-primary rounded-pill px-5 text-dark">聯絡我們</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill px-5 ">聯絡我們</button>
             </div>
 
         </div>
@@ -207,11 +214,11 @@
 
         <div class="mx-3 d-flex flex-column flex-lg-row  align-items-center">
             <img src="https://images.unsplash.com/photo-1540845692348-b9d2bc813a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=470&q=80"
-                alt="flower" class="object-fit-cover" style="height: 200px; width: 200px;">
+                alt="flower" class="object-fit-cover w-200 h-200">
             <div class="text-center text-lg-start">
                 <h3 class="h4">你也想當花藝師?</h3>
                 <p><i class="bi bi-flower1"></i> 歡迎加入我們</p>
-                <button type="button" class="btn btn-outline-primary rounded-pill px-5 text-dark">加入我們</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill px-5 ">加入我們</button>
             </div>
         </div>
     </div>
@@ -226,6 +233,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+
+    <script src="./js/animation.js"></script>
+
 </body>
 
 </html>

@@ -42,9 +42,8 @@
             </div>
         </div>
     </nav>
-    <div class="banner mb-4">
-    </div>
-    <div class="container py-5">
+
+    <div class="container mt-5 py-5 ">
         <div class="row d-flex  justify-content-center">
             <div class="col-lg-8">
                 <form action="" class=" rounded border-3 border-top border-secondary shadow p-4 p-lg-5">
@@ -74,8 +73,8 @@
                             </select>
                         </div>
                         <div class="col">
-                            <label for="class" class="form-label">請選擇上課的日期</label>
-                            <select class="form-select" aria-label="Default select example" id="class">
+                            <label for="date" class="form-label">請選擇上課的日期</label>
+                            <select class="form-select" aria-label="Default select example" id="date">
                                 <option selected>1/5</option>
                                 <option>1/6</option>
                                 <option>1/7</option>
@@ -86,15 +85,20 @@
                         </div>
                         <div class="col">
                             <h3 class="fs-6">加購區</h3>
-                            <input class="form-check-input" type="checkbox" value="" id="beef">
-                            <label for="beef" class="form-label">精緻小卡 NT$30/張</label>
-                            <input class="form-check-input ms-3" type="checkbox" value="" id="pork">
-                            <label for="pork" class="form-label">陶瓷花器 NT$800/個</label>
-                            <input class="form-check-input ms-3" type="checkbox" value="" id="vegetable">
-                            <label for="vegetable" class="form-label">包裝紙 NT$20/張</label>
+                            <div class="d-flex flex-column justufy-content-center align-items-start">
+                                <div> <input class="form-check-input" type="checkbox" value="" id="beef">
+                                    <label for="beef" class="form-label">精緻小卡 NT$30/張</label>
+                                </div>
+                                <div> <input class="form-check-input " type="checkbox" value="" id="pork">
+                                    <label for="pork" class="form-label">陶瓷花器 NT$800/個</label>
+                                </div>
+                                <div> <input class="form-check-input" type="checkbox" value="" id="vegetable">
+                                    <label for="vegetable" class="form-label">包裝紙 NT$20/張</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="col">
-                            <label for="pay" class="form-label">訂金付款方式</label>
+                            <label for="pay" class="form-label">付款方式</label>
                             <select class="form-select" aria-label="Default select example" id="pay">
                                 <option>信用卡</option>
                                 <option selected>銀行轉帳</option>
